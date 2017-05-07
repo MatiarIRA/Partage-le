@@ -49,7 +49,7 @@ CREATE TABLE UTILISATEUR (
        Email		 VARCHAR2 (320)	        NOT NULL,
        		CONSTRAINT 	  chk_Email
 		CHECK (REGEXP_LIKE(Email,'[A-z]*(.[A-z]*)?@[A-z]*(.[a-z]{2,3})?.[a-z]{2,3}','i')),	
-       Hash_pw	      	 VARCHAR2 (16)          NOT NULL, 
+       Hash_pw	      	 VARCHAR2 (16), 
        Path_photo_U  	 VARCHAR2 (100),
        Tel 		 VARCHAR2 (15),
                 CONSTRAINT 	  chk_Tel
